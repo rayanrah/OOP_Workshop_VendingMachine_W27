@@ -28,6 +28,7 @@ public class App
         System.out.println(Snacks2.getProductInformation());
         System.out.println(Snacks3.getProductInformation());
 
+        // Initiate the interface Class.
         VendingMachine vendingMachine1 = new VendingMachine();
         vendingMachine1.addCurrency(550);
 

@@ -55,11 +55,13 @@ public class VendingMachine implements IVendingMachine {
         }
     }
 
+    // Method to get the current balance in the deposit pool
     @Override
     public int getBalance() {
-        return 0;
+        return depositPool;
     }
 
+    // Method to request a product by its ID
     @Override
     public Products request(int id) {
         return null;
@@ -75,10 +77,17 @@ public class VendingMachine implements IVendingMachine {
         return "";
     }
 
+    // Method to get descriptions of all products
     @Override
     public String[] getProducts() {
-        return new String[0];
+        String[] productDescriptions = new String[items.length];
+        for (int i = 0; i < items.length; i++) {
+            Products product = items[i]; // Get each product
+            productDescriptions [i] = "ID: " + product.getId() + ", Name: " + product.getProductName() + ", Price: " + product.getPrice(); // Store the product description
+        }
+        return productDescriptions; // Return the array of product descriptions
     }
+
 
 
 }
