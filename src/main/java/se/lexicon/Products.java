@@ -4,27 +4,37 @@ import java.util.PrimitiveIterator;
 import java.util.Random;
 import java.util.UUID;
 
-public class Products {
+public abstract class Products {
+    //make the class "Abstract" to make it only for inheritance and not creating an object.
 
     //--------------- Variables ---------------
 
-    private static int nextId = 1; // Static variable to keep track of the next ID
+    private static int sequencer = 1; // Static variable to keep track of the next ID
     private int id;
     private String productName;
     private double price;
+    // We add 'Final' to make it read-only and not changeable.
 
     // --------------- Constructor ---------------
-    public Products(int id, double price, String productName) {
-        this.id = nextId++; // Assign current nextId value and then increment nextId.
+    public Products(String productName, double price) {
+        this.id = getNextId(); // Assign current nextId value and then increment nextId.
         this.price = price;
         this.productName = productName;
     }
 
+
     // --------------- Setters ---------------
+
+    // Method to generate the ID: Increment and return the next ID
+    private static int getNextId() {
+        return sequencer++;
+    }
 
     public String getProductName() {
         return productName;
     }
+
+    // --------------- Getter ---------------
 
     public void setProductName(String productName) {
         if (productName == null || productName.trim().isEmpty()) {
@@ -32,8 +42,6 @@ public class Products {
         }
         this.productName = productName;
     }
-
-    // --------------- Getter ---------------
 
     public double getPrice() {
         return price;
@@ -46,13 +54,16 @@ public class Products {
         this.price = price;
     }
 
+    // --------------- Methods ---------------
+
     public int getId() {
         return id;
     }
 
     // Method to Print the product information.
+    // Added "Protected" to make it only available for Sub-classes.
     public String getProductInformation() {
-        return "ID number: " + id + "Product: " + productName + "price: " + price;
+        return "ID number:" + id + " - Product:" + productName + "Size: " + " - price:" + price;
     }
 
 

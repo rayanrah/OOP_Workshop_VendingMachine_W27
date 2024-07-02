@@ -1,15 +1,13 @@
 package se.lexicon;
 
-public class HealthyProducts extends Products {
+public final class HealthyProducts extends Products {
+// ** Add "Final" class to only use this class for creating objects and not inheritance.
 
     private boolean isItVegan;
-    // Vitamin Water
-    // Protein Bar
-    // Mizex nuts
 
 
-    public HealthyProducts(int id, double price, String productName, boolean isItVegan) {
-        super(id, price, productName);
+    public HealthyProducts(String productName, double price, boolean isItVegan) {
+        super(productName, price);
         this.isItVegan = isItVegan;
     }
 }
