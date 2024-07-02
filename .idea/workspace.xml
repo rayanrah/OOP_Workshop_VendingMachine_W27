@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="56afe0ad-7539-4223-b672-a1ff63c2c11d" name="Changes" comment="Create a Class of elements and inherited elements from parents to sub-parents.">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Size.java" afterDir="false" />
+    <list default="true" id="56afe0ad-7539-4223-b672-a1ff63c2c11d" name="Changes" comment="Override + enum.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/IVendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Beverages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Beverages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/HealthyProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/HealthyProducts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/se/lexicon/Snacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/se/lexicon/Snacks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,7 +57,6 @@
     "Application.App.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Programming Course/git-workshop/OOP-Book-Lender-Workshop-Week-26"
@@ -86,7 +79,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719916906569</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Override + enum.">
+      <option name="closed" value="true" />
+      <created>1719930205652</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719930205652</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Create a Class of elements and inherited elements from parents to sub-parents." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create a Class of elements and inherited elements from parents to sub-parents." />
+    <MESSAGE value="Override + enum." />
+    <option name="LAST_COMMIT_MESSAGE" value="Override + enum." />
   </component>
 </project>
