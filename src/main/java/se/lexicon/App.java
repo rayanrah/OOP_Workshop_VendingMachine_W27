@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import java.util.Arrays;
+
 public class App
 {
     public static void main(String[] args) {
@@ -28,9 +30,25 @@ public class App
         System.out.println(Snacks2.getProductInformation());
         System.out.println(Snacks3.getProductInformation());
 
-        // Initiate the interface Class.
-        VendingMachine vendingMachine1 = new VendingMachine();
-        vendingMachine1.addCurrency(550);
+        System.out.println("==========================");
+        System.out.println("Adding Products to Vending Machine: ");
+        System.out.println("{Beverages1, Beverages2, Beverages3, Snacks3}");
+        Products [] productsForVM1 = new Products [] {Beverages1, Beverages2, Beverages3, Snacks3};
+
+        VendingMachine vendingMachine1 = new VendingMachine(productsForVM1);
+
+        System.out.println("==========================");
+        System.out.println("Welcome! Our Products available in the vending machine: ");
+        System.out.println(Arrays.toString(vendingMachine1.getProducts()));
+
+        System.out.println("==========================");
+        int amount = 200;
+        vendingMachine1.addCurrency(amount); // Add 200 currency to the deposit pool.;
+        System.out.println("Current balance after adding currency: " + vendingMachine1.getBalance());
+        System.out.println("==========================");
+        vendingMachine1.request(2);
+        System.out.println("Current balance after requesting product: " + vendingMachine1.getBalance());
+
 
 
 
