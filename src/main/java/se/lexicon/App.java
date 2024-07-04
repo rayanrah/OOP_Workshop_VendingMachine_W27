@@ -46,9 +46,8 @@ public class App
         System.out.println("==========================");
         int amount = 200;
         vendingMachine1.addCurrency(amount); // Add 200 currency to the deposit pool.;
-        System.out.println("Current balance after adding currency: " + vendingMachine1.getBalance());
+        System.out.println("Balance after adding currency: " + vendingMachine1.getBalance());
         System.out.println("==========================");
-        vendingMachine1.request(3);
         System.out.println("Your order: " + vendingMachine1.request(3).getProductInformation());
         System.out.println("Your balance after buying product: " + vendingMachine1.getBalance());
         System.out.println("==========================");
