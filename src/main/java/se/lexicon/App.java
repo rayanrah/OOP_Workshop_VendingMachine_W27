@@ -1,5 +1,7 @@
 package se.lexicon;
 
+import se.lexicon.model.*;
+
 import java.util.Arrays;
 
 public class App
@@ -7,18 +9,18 @@ public class App
     public static void main(String[] args) {
 
         // Created objects for Beverages.
-        Beverages Beverages1 = new Beverages ("Cola", 11.99,false);
-        Beverages Beverages2 = new Beverages ("Cola", 12.49,false);
-        Beverages Beverages3 = new Beverages ("Cola", 14.29,true);
+        Beverages Beverages1 = new Beverages ("Cola", 12,false);
+        Beverages Beverages2 = new Beverages ("Cola", 13,false);
+        Beverages Beverages3 = new Beverages ("Cola", 15,true);
 
         System.out.println(Beverages1.getProductInformation());
         System.out.println(Beverages2.getProductInformation());
         System.out.println(Beverages3.getProductInformation());
 
         // Created objects for HealthyProducts.
-        HealthyProducts HealthyProducts1 = new HealthyProducts("VitaminWater", 29.30,false);
-        HealthyProducts HealthyProducts = new HealthyProducts("ProteinBar", 29.30, true);
-        HealthyProducts HealthyProducts3 = new HealthyProducts("Mixednuts", 29.30,true);
+        HealthyProduct HealthyProducts1 = new HealthyProduct("VitaminWater", 30,false);
+        HealthyProduct HealthyProducts = new HealthyProduct("ProteinBar", 32, true);
+        HealthyProduct HealthyProducts3 = new HealthyProduct("Mixednuts", 32,true);
 
 
         // Created objects for Snacks.
@@ -33,9 +35,9 @@ public class App
         System.out.println("==========================");
         System.out.println("Adding Products to Vending Machine: ");
         System.out.println("{Beverages1, Beverages2, Beverages3, Snacks3}");
-        Products [] productsForVM1 = new Products [] {Beverages1, Beverages2, Beverages3, Snacks3};
+        Product[] productForVM1 = new Product[] {Beverages1, Beverages2, Beverages3, Snacks3};
 
-        VendingMachine vendingMachine1 = new VendingMachine(productsForVM1);
+        VendingMachine vendingMachine1 = new VendingMachine(productForVM1);
 
         System.out.println("==========================");
         System.out.println("Welcome! Our Products available in the vending machine: ");
@@ -46,9 +48,10 @@ public class App
         vendingMachine1.addCurrency(amount); // Add 200 currency to the deposit pool.;
         System.out.println("Current balance after adding currency: " + vendingMachine1.getBalance());
         System.out.println("==========================");
-        vendingMachine1.request(2);
-        System.out.println("Current balance after requesting product: " + vendingMachine1.getBalance());
-
+        vendingMachine1.request(3);
+        System.out.println("Your order: " + vendingMachine1.request(3).getProductInformation());
+        System.out.println("Your balance after buying product: " + vendingMachine1.getBalance());
+        System.out.println("==========================");
 
 
 

@@ -1,6 +1,6 @@
-package se.lexicon;
+package se.lexicon.model;
 
-public final class Beverages extends Products {
+public final class Beverages extends Product {
 // ** Add "Final" class to only use this class for creating objects and not inheritance.
     private boolean isItSugerFree;
 

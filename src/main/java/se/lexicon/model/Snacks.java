@@ -1,6 +1,6 @@
-package se.lexicon;
+package se.lexicon.model;
 
-public class Snacks extends Products { // use 'extends' to access the elements in Products class.
+public class Snacks extends Product { // use 'extends' to access the elements in Products class.
 // ** Add "Final" class to only use this class for creating objects and not inheritance.
 
     private Size size;

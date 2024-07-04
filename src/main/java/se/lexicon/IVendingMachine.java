@@ -10,6 +10,8 @@ Interface is a Contract that define a group of abstract methods.
 4.Static final fields.
  */
 
+import se.lexicon.model.Product;
+
 public interface IVendingMachine {
 
     // Method to add currency to the vending machine.
@@ -19,7 +21,7 @@ public interface IVendingMachine {
     int getBalance();
 
     // Method to request a product from the vending machine based on its ID.
-    Products request(int id);
+    Product request(int id);
 
     // Method to end the current session and return any remaining balance
     int endSession();

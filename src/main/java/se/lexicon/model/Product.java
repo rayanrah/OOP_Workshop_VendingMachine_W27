@@ -1,10 +1,6 @@
-package se.lexicon;
+package se.lexicon.model;
 
-import java.util.PrimitiveIterator;
-import java.util.Random;
-import java.util.UUID;
-
-public abstract class Products {
+public abstract class Product {
     //make the class "Abstract" to make it only for inheritance and not creating an object.
 
     //--------------- Variables ---------------
@@ -16,7 +12,7 @@ public abstract class Products {
     // We add 'Final' to make it read-only and not changeable.
 
     // --------------- Constructor ---------------
-    public Products(String productName, double price) {
+    public Product(String productName, double price) {
         this.id = getNextId(); // Assign current nextId value and then increment nextId.
         this.price = price;
         this.productName = productName;

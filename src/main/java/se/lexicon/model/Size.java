@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.model;
 
 public enum Size {
     // We use 'enum' when we have a fixed setup constant.
@@ -6,7 +6,7 @@ public enum Size {
     //  You can not initialize it.
     //  The contents of enum 'final'.
 
-    SMALL ("S", 20), MEDIUM ("M", 28.99), LARGE ("L",39.99 );
+    SMALL ("S", 20), MEDIUM ("M", 30), LARGE ("L",40 );
     // group of Constance values.
 
     private final String label;
